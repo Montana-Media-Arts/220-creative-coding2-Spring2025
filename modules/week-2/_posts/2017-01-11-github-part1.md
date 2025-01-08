@@ -7,7 +7,7 @@ module: 2
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'Overview')">Overview</button>
   <button class="tablinks" onclick="openTab(event, 'Watch')">Watch and Star</button>
-  <button class="tablinks" onclick="openTab(event, 'Issues')">Issues</button>
+ 
 </div>
 
 <div id="Overview" class="tabcontent" style="display:block" markdown="1">
@@ -36,21 +36,3 @@ To watch the course repo;
 ![Follow and Star Repositories on GitHub.com](../imgs/Screen3.png)
 </div>
 
-<div id="Issues" class="tabcontent" markdown="1">
-
-To create or respond to an issue, open the repo ["Issues Forum"](https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2024-Samples/issues).
-
-There you can search open issues to try and;
-
-- get yourself help
-- or help a colleague
-
-If no issue matches your problem, you can open a "New Issue". This allows you to describe your problem, thereby allows everyone in the class to help work on it.
-
-![New Issue button](../imgs/Screen4.png)
-
-
-NOTE: You should not repeat a comment that has already been added by anyone from your class. However, if you would like to further a comment already there, “@mention” the classmate/user and continue their discussion.
-
-As the semester goes on you will be expected to open issues here when you are having problems. You will also be graded on your involvement in the course issue board and your responses provided to fellow classmates throughout the semester.
-</div>

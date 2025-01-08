@@ -6,7 +6,7 @@ jotted: false
 
 ## Review p5.js Basic Shapes
 
-Remember, drawing simple shapes is the first thing that p5.js allows us to do quickly. You can do this using the p5.js editor or you an create a page a sketch file. If you need a refresher, please feel free to go back to <a href="https://montana-media-arts.github.io/120_CreativeCoding1-Fall2021/modules/week-9/overview/" target="_new">MART 120 Week 9</a>.   Here are examples in the following tabs.
+Remember, drawing simple shapes is the first thing that p5.js allows us to do quickly. You can do this using the p5.js editor or you an create a page a sketch file. If you need a refresher, please feel free to go back to <a href="https://montana-media-arts.github.io/120_CreativeCoding1-Fall2024/modules/week-9/overview/" target="_new">MART 120 Week 9</a>.   Here are examples in the following tabs.
 
 <div class="tab">
     <button class="tablinks active" onclick="openTab(event, 'Circle')">Circle</button>

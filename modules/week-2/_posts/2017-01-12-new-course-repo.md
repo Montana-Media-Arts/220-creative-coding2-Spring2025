@@ -73,5 +73,5 @@ Your browser will now show you the brand new repository!
 
 Finally, you should open the new local copy of the repo directory in your text editor. If you are using GitHub Desktop.app, you can select the "Open in Atom" or "Open in Visual Studio Code" option from the "Repository" dropdown menu (depending on the text editor you have installed and setup with GitHub Desktop.app)
 
-![Open in Atom option](../imgs/Screen12.png)
+![Open in VS Code option](../imgs/Screen12.png)
 </div>
