@@ -26,7 +26,7 @@ Now that we know about Classes, Objects and Arrays, we can create animations.  F
 
 Keep in mind, this first example, doesn't use a class.  See how we use the preload to load the images and then display them. 
 
-<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2024-Samples/blob/main/Week%204%20Animation%20Example%201.zip" target="_blank">Animation Example 1</a>
+<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Week%204%20Animation%20Example%201.zip" target="_blank">Animation Example 1</a>
 
 Is there a way to slow down the animation?  Think about what you did last week.
 
