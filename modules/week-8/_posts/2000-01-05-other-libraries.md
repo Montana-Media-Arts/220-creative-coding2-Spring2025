@@ -30,12 +30,12 @@ Pick and choose from some of these to incorporate into your project.
 * <a href="https://p5.glitch.me/" target="_blank">Glitch</a>
 * <a href="https://github.com/SYM380/p5.pattern" target="_blank">Pattern Drawing</a>
 * <a href="https://github.com/liz-peng/p5.Polar" target="_blank">Polar</a>
-* <a href="https://github.com/generative-light/p5.scribble.js" target="_blank">Scribble</a>
-* <a href="https://tetoki.eu/asciiart" target="_blank">ASCII Art</a>
+* <a href="https://github.com/RandomGamingDev/AnimatorJs/" target="_blank">AnimatorJS</a>
+* <a href="https://github.com/meezwhite/p5.grain" target="_blank">p5 Grain</a>
 
 If you want to explore other ones, check out the p5 library section
 
-<a href="https://p5js.org/libraries/" target="_blank">p5.js Libraries</a>
+<a href="https://p5js.org/libraries/directory/" target="_blank">p5.js Libraries</a>
 
 </div>
 </div>

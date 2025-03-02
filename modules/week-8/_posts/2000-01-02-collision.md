@@ -1,5 +1,5 @@
 ---
-title: Week Collision
+title: Basic Collision Review
 module: 8
 ---
 
@@ -23,7 +23,7 @@ module: 8
 <div id="Overview" class="tabcontent" style="display:block"  >
 <div class="tabhtml" markdown="1">
 
-Collision is required game and for many interactive pieces. So, we will examine the basics of collision using box collision.
+Collision has been covered over the last few weeks. Let's review.
 
 
 </div>
@@ -34,43 +34,30 @@ Collision is required game and for many interactive pieces. So, we will examine 
 
 Here is an example of basic collision where it looks at the bounding boxes of the two objects.
 
-First, let's create a Rectangle class.
+First, let's create a character class.
 
 ```js
 
-class Rectangle
+class character
 {
-  
-  constructor(x,y,w,h)
-  {
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;
-  }
-  
-  getX()
-  {
-    return this.x;
-  }
-  getY()
-  {
-    return this.y;
-  }
-  getW()
-  {
-    return this.w;
-  }
-  getH()
-  {
-    return this.h;
-  }
-  
-  draw()
-  {
-    rect(this.x, this.y, this.w, this.h);
-  }
-}
+    constructor(path, x,y)
+    {
+        this.path = path;
+        // need the image
+        this.myImage = loadImage(this.path);
+        this.x = x;
+        this.y = y;
+        this.imageWidth = 150;
+        this.imageHeight = 200;
+    }
+
+    draw()
+    {
+        // image draw
+
+        //rect(this.x,this.y, this.myImage.width, this.myImage.height);
+        image(this.myImage, this.x, this.y, 150, 200);
+    }
 
 ```
 
@@ -82,25 +69,32 @@ class Rectangle
 <div id="Step2" class="tabcontent">
 <div class="tabhtml" markdown="1">
 
-Then, we need to create two Rectangle objects that can be evaluated.
+Then, we created food and animations
 
 ```js
+// created animations
+function preload() {
 
+   
+    for (var i = 0; i < 10; i++) {
+        // concatenation - adding strings together
+        myCharacter = new character("../images/Idle__00" + i + ".png", x, y);
+        animation.push(myCharacter);
+    }
+
+   
+}
+
+// created food
 function setup() {
-  createCanvas(400, 400);
+    createCanvas(800, 800);
+    setInterval(updateIndex, 50);
+    for (let i = 0; i < 5; i++) {
+        myFood = new food(random(100, 600), random(100, 600), 25);
+        foodArray.push(myFood);
+    }
 }
-
-function draw() {
-  background(220);
-  
-  var r1 = new Rectangle(100,100,20,40);
-  var r2 = new Rectangle(100,210,30,20);
-  
-  r1.draw();
-  r2.draw();
-  
  
-}
 
 ```
 
@@ -110,25 +104,18 @@ function draw() {
 <div id="Step3" class="tabcontent">
 <div class="tabhtml" markdown="1">
 
-We also need to a function to test if two objects are overlapping.  It might look something like this.
+Then, we created a function to see if the character was overlapping with another object.
 
 ```js
 
-function isRectanglesColliding(rec1, rec2){
-    var topEdge1 = rec1.getY() + rec1.getH();
-    var rightEdge1 = rec1.getX() + rec1.getW(); 
-    var leftEdge1 = rec1.getX();
-    var bottomEdge1 = rec1.getY();
-    var topEdge2 = rec2.getY() + rec2.getH();
-    var rightEdge2 = rec2.getX() + rec2.getW(); 
-    var leftEdge2 = rec2.getX();
-    var bottomEdge2 = rec2.getY();   
-    
-    if( leftEdge1 < rightEdge2 && rightEdge1 > leftEdge2 && bottomEdge1 < topEdge2 && topEdge1 > bottomEdge2){
-        return true; 
-   }
-   return false;
-}
+ hasCollided(x2, y2, w2, h2) {
+        return (
+          this.x < x2 + w2 &&
+          this.x +  this.imageWidth > x2 &&
+          this.y < y2 + h2 &&
+          this.y + this.imageHeight > y2
+        );
+      }
 
 
 ```
@@ -139,27 +126,14 @@ function isRectanglesColliding(rec1, rec2){
 <div id="Step4" class="tabcontent">
 <div class="tabhtml" markdown="1">
 
-Finally, we need to test if the two rectangles are overlapping one another.
+So, then we checked after movement if the character had collided wit the food.
 
 ```js
-
-function setup() {
-  createCanvas(400, 400);
+ for (let k = 0; k < foodArray.length; k++) {
+    if (animation[i].hasCollided(foodArray[k].x, foodArray[k].y, 25, 25)) {
+        foodArray.splice(k, 1);       
+    }
 }
-
-function draw() {
-  background(220);
-  
-  var r1 = new Rectangle(100,100,20,40);
-  var r2 = new Rectangle(100,210,30,20);
-  
-  r1.draw();
-  r2.draw();
-
-  // this calls the function
-  text(isRectanglesColliding(r1,r2), 300,300);
-}
-
 
 ```
 

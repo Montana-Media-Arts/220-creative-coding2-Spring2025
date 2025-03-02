@@ -6,4 +6,4 @@ jotted: false
 
 # Conclusions
 
-This week we added sound, collision and additional external libraries into our projects.
+This week we added sound, library collision and additional external libraries into our projects.
