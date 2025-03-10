@@ -139,6 +139,6 @@ And we can update the animationImage's isColliding to look like this.
 
 ```
 
-<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2023-Samples/blob/main/Week%208/p5play%20collisions.zip" target="_blank">Example</a>
+<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Week%208/p5play%20collisions.zip" target="_blank">Example</a>
 
 **Note** We also added the debug at the bottom so we can see the bounding boxes on the sprites.  This will tell us where they are colliding.  Now, I am going to let you know work with the play library.
