@@ -96,5 +96,5 @@ loadAnimation()
 
 What just happened? We are still loading all the frames, but p5.play loads them all and infers the sequence by looking at the first image and the last image. Then we can use the **animation** function to display them.  The **frameDelay** slows down the animation for us.
 
-<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Week%208/Assets%20p5play%20example.zip" target="_blank">Example</a>
+<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Homework%208/Assets%20p5play%20example.zip" target="_blank">Example</a>
 
