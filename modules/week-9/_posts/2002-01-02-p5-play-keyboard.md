@@ -111,7 +111,7 @@ function draw()
 
 ```
 
-<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Week%208/Change%20Animations%20example.zip" target="_blank"> Example</a>
+<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/tree/main/Homework%208" target="_blank"> Example</a>
 
 
 <a href="https://youtu.be/61hEdXTZHWo" target="_blank">Video</a>
@@ -176,7 +176,7 @@ drawAnimation(animationType) {
 
 ```
 
-<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/blob/main/Week%208/Change%20Direction%20example.zip" target="_blank">Example</a>
+<a href="https://github.com/Montana-Media-Arts/220_CreativeCoding2-Spring2025-Samples/tree/main/Homework%208" target="_blank">Example</a>
 
 We set the velocity back to 0.  Whew. that's better!  What about collisions?
 
