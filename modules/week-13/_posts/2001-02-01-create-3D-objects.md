@@ -24,9 +24,9 @@ How do we create 3D objects? There are several tools to help us and it's importa
 
 ### Tools
 
-**Video on how to create 3D objects in Photoshop**
+**Video on how to create 3D objects in Illustrator**
 
-https://www.youtube.com/watch?v=iD9e7-2LYMg
+https://www.youtube.com/watch?v=Lzui1mz7GhY
 
 **Vectary**
 
@@ -60,6 +60,9 @@ https://www.meshmixer.com/
 
 https://www.blender.org/
 
+**Figuro**
+
+https://www.figuro.io/Home/Welcome
 
 </div>
 </div>
